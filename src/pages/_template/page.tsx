@@ -8,7 +8,7 @@ export default function TemplatePage() {
   return (
     <>
       <style>{themeStyles}</style>
-      <div className={themeClassName}>
+      <div className={`${themeClassName} bg-background text-foreground min-h-screen`}>
         <StandardShowcase styles={styles} pageName="Template" />
         <SkillPanel skillContent={skillMd} />
       </div>

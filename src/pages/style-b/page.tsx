@@ -8,7 +8,7 @@ export default function StyleBPage() {
   return (
     <>
       <style>{themeStyles}</style>
-      <div className={themeClassName}>
+      <div className={`${themeClassName} bg-background text-foreground min-h-screen`}>
         <StandardShowcase styles={styles} pageName="Style B: Editorial / Poster" />
         <SkillPanel skillContent={skillMd} />
       </div>
