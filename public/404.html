@@ -5,21 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skill Zen Garden</title>
     <script>
-      // SPA redirect script for GitHub Pages
-      // Converts the path to a query string and redirects to index.html
-      const segment = 1; // Number of path segments to keep (repo name in project pages)
-      const pathSegmentsToKeep = window.location.pathname.split('/').slice(0, segment + 1).join('/');
-      const redirectPath = window.location.pathname.slice(pathSegmentsToKeep.length);
-      const search = window.location.search;
-      const hash = window.location.hash;
-
-      if (redirectPath) {
-        window.location.replace(
-          pathSegmentsToKeep + '/?p=' + encodeURIComponent(redirectPath) +
-          (search ? '&q=' + encodeURIComponent(search.slice(1)) : '') +
-          hash
-        );
-      }
+      // GitHub Pages SPA redirect
+      // Store the full URL in sessionStorage and redirect to base URL
+      sessionStorage.redirect = location.href;
+      location.replace(location.origin + '/design-skill-zen-garden/');
     </script>
   </head>
   <body>
