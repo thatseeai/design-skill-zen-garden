@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill Zen Garden</title>
+    <script>
+      // SPA redirect script for GitHub Pages
+      // Converts the path to a query string and redirects to index.html
+      const segment = 1; // Number of path segments to keep (repo name in project pages)
+      const pathSegmentsToKeep = window.location.pathname.split('/').slice(0, segment + 1).join('/');
+      const redirectPath = window.location.pathname.slice(pathSegmentsToKeep.length);
+      const search = window.location.search;
+      const hash = window.location.hash;
+
+      if (redirectPath) {
+        window.location.replace(
+          pathSegmentsToKeep + '/?p=' + encodeURIComponent(redirectPath) +
+          (search ? '&q=' + encodeURIComponent(search.slice(1)) : '') +
+          hash
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>JavaScript is required for this application.</noscript>
+  </body>
+</html>
