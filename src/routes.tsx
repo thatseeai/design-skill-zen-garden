@@ -2,6 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router-dom"
 
 import StyleAPage from "@/pages/style-a/page"
 import StyleBPage from "@/pages/style-b/page"
+import StyleCPage from "@/pages/style-c/page"
 
 export const router = createBrowserRouter(
   [
@@ -16,6 +17,10 @@ export const router = createBrowserRouter(
     {
       path: "/style-b",
       element: <StyleBPage />,
+    },
+    {
+      path: "/style-c",
+      element: <StyleCPage />,
     },
   ],
   {

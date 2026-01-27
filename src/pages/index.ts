@@ -15,4 +15,9 @@ export const pages: PageMeta[] = [
     name: "Style B: Editorial / Poster",
     description: "대담하고 시각적 임팩트가 강한 에디토리얼 스타일",
   },
+  {
+    slug: "style-c",
+    name: "Style C: Cute Animated World",
+    description: "귀여운 애니메이션 세계관의 파스텔 감성 스타일",
+  },
 ]
