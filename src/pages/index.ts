@@ -30,4 +30,9 @@ export const pages: PageMeta[] = [
     name: "Style E: Industrial Architecture",
     description: "다크 인더스트리얼 아키텍처 - 극적인 타이포그래피와 레이어드 프레임의 갤러리 스타일",
   },
+  {
+    slug: "style-f",
+    name: "Style F: Vintage Baroque",
+    description: "빅토리안 시대 오너먼트와 골드 세피아 톤의 바로크 빈티지 스타일",
+  },
 ]
