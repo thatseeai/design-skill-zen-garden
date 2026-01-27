@@ -20,4 +20,14 @@ export const pages: PageMeta[] = [
     name: "Style C: Cute Animated World",
     description: "귀여운 애니메이션 세계관의 파스텔 감성 스타일",
   },
+  {
+    slug: "style-d",
+    name: "Style D: CSS Zen Garden Bold",
+    description: "대담한 컬러 블록과 강렬한 타이포그래피의 CSS Zen Garden 스타일",
+  },
+  {
+    slug: "style-e",
+    name: "Style E: Industrial Architecture",
+    description: "다크 인더스트리얼 아키텍처 - 극적인 타이포그래피와 레이어드 프레임의 갤러리 스타일",
+  },
 ]
