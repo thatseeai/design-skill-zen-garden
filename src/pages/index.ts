@@ -35,4 +35,9 @@ export const pages: PageMeta[] = [
     name: "Style F: Vintage Baroque",
     description: "빅토리안 시대 오너먼트와 골드 세피아 톤의 바로크 빈티지 스타일",
   },
+  {
+    slug: "style-g",
+    name: "Style G: Zen Garden Peaceful",
+    description: "전통적인 선(Zen) 스타일의 차분하고 고요한 분위기를 담은 스타일",
+  },
 ]
