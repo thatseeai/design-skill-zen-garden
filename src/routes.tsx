@@ -10,6 +10,7 @@ import StyleGPage from "@/pages/style-g/page"
 import StyleHPage from "@/pages/style-h/page"
 import StyleIPage from "@/pages/style-i/page"
 import StyleJPage from "@/pages/style-j/page"
+import StyleKPage from "@/pages/style-k/page"
 
 export const router = createBrowserRouter(
   [
@@ -56,6 +57,10 @@ export const router = createBrowserRouter(
     {
       path: "/style-j",
       element: <StyleJPage />,
+    },
+    {
+      path: "/style-k",
+      element: <StyleKPage />,
     },
   ],
   {

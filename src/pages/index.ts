@@ -55,4 +55,9 @@ export const pages: PageMeta[] = [
     name: "Style J: Fur Couture",
     description: "털 옷 질감과 겨울 럭셔리 무드를 담은 포근하고 고급스러운 스타일",
   },
+  {
+    slug: "style-k",
+    name: "Style K: Pastel Sticker Pack",
+    description: "파스텔 패키지와 레트로 스티커 감성의 밝고 유쾌한 스타일",
+  },
 ]
