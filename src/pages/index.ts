@@ -45,4 +45,9 @@ export const pages: PageMeta[] = [
     name: "Style H: Korean Dancheong",
     description: "전통 한국 단청의 오방색과 반복 문양을 현대 대시보드에 녹인 스타일",
   },
+  {
+    slug: "style-i",
+    name: "Style I: Premium Care Editorial",
+    description: "프리미엄 케어 랜딩 페이지 감성의 밝고 미니멀한 서비스 안내 스타일",
+  },
 ]
