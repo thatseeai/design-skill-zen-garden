@@ -40,4 +40,9 @@ export const pages: PageMeta[] = [
     name: "Style G: Zen Garden Peaceful",
     description: "전통적인 선(Zen) 스타일의 차분하고 고요한 분위기를 담은 스타일",
   },
+  {
+    slug: "style-h",
+    name: "Style H: Korean Dancheong",
+    description: "전통 한국 단청의 오방색과 반복 문양을 현대 대시보드에 녹인 스타일",
+  },
 ]
