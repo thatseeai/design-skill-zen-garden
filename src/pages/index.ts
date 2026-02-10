@@ -50,4 +50,9 @@ export const pages: PageMeta[] = [
     name: "Style I: Premium Care Editorial",
     description: "프리미엄 케어 랜딩 페이지 감성의 밝고 미니멀한 서비스 안내 스타일",
   },
+  {
+    slug: "style-j",
+    name: "Style J: Fur Couture",
+    description: "털 옷 질감과 겨울 럭셔리 무드를 담은 포근하고 고급스러운 스타일",
+  },
 ]
