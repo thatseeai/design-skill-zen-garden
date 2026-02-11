@@ -60,4 +60,9 @@ export const pages: PageMeta[] = [
     name: "Style K: Pastel Sticker Pack",
     description: "파스텔 패키지와 레트로 스티커 감성의 밝고 유쾌한 스타일",
   },
+  {
+    slug: "style-l",
+    name: "Style L: Neon Kawaii Pop",
+    description: "네온 핑크/시안 대비와 하프톤 그래픽의 만화풍 하이틴 스타일",
+  },
 ]
