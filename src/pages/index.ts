@@ -65,4 +65,9 @@ export const pages: PageMeta[] = [
     name: "Style L: Neon Kawaii Pop",
     description: "네온 핑크/시안 대비와 하프톤 그래픽의 만화풍 하이틴 스타일",
   },
+  {
+    slug: "style-m",
+    name: "Style M: Called Into Bloom",
+    description: "김춘수 「꽃」의 호명과 관계의 정서를 담은 서정적 에디토리얼 스타일",
+  },
 ]
