@@ -17,6 +17,7 @@ import StyleNPage from "@/pages/style-n/page"
 import StyleOPage from "@/pages/style-o/page"
 import StylePPage from "@/pages/style-p/page"
 import StyleQPage from "@/pages/style-q/page"
+import StyleRPage from "@/pages/style-r/page"
 
 export const router = createBrowserRouter(
   [
@@ -91,6 +92,10 @@ export const router = createBrowserRouter(
     {
       path: "/style-q",
       element: <StyleQPage />,
+    },
+    {
+      path: "/style-r",
+      element: <StyleRPage />,
     },
   ],
   {
