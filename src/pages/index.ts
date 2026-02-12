@@ -85,4 +85,9 @@ export const pages: PageMeta[] = [
     name: "Style P: Retro Sticker Pop",
     description: "파스텔 고채도, 두꺼운 아웃라인, 스티커 컷팅 감성의 레트로 팝 스타일",
   },
+  {
+    slug: "style-q",
+    name: "Style Q: Y2K Glossy UI",
+    description: "크롬 하이라이트와 볼륨감 있는 버튼, 유광 레이어 중심의 Y2K 글로시 스타일",
+  },
 ]

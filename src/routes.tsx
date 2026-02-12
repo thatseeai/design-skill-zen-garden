@@ -16,6 +16,7 @@ import StyleMPage from "@/pages/style-m/page"
 import StyleNPage from "@/pages/style-n/page"
 import StyleOPage from "@/pages/style-o/page"
 import StylePPage from "@/pages/style-p/page"
+import StyleQPage from "@/pages/style-q/page"
 
 export const router = createBrowserRouter(
   [
@@ -86,6 +87,10 @@ export const router = createBrowserRouter(
     {
       path: "/style-p",
       element: <StylePPage />,
+    },
+    {
+      path: "/style-q",
+      element: <StyleQPage />,
     },
   ],
   {
