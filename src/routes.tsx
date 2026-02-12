@@ -14,6 +14,7 @@ import StyleKPage from "@/pages/style-k/page"
 import StyleLPage from "@/pages/style-l/page"
 import StyleMPage from "@/pages/style-m/page"
 import StyleOPage from "@/pages/style-o/page"
+import StylePPage from "@/pages/style-p/page"
 
 export const router = createBrowserRouter(
   [
@@ -76,6 +77,10 @@ export const router = createBrowserRouter(
     {
       path: "/style-o",
       element: <StyleOPage />,
+    },
+    {
+      path: "/style-p",
+      element: <StylePPage />,
     },
   ],
   {

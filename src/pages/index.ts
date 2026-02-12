@@ -75,4 +75,9 @@ export const pages: PageMeta[] = [
     name: "Style O: Futuristic Brutalism",
     description: "네온 대비와 매트 다크 베이스, 비대칭 블록 레이아웃의 미래형 브루탈리즘 스타일",
   },
+  {
+    slug: "style-p",
+    name: "Style P: Retro Sticker Pop",
+    description: "파스텔 고채도, 두꺼운 아웃라인, 스티커 컷팅 감성의 레트로 팝 스타일",
+  },
 ]
