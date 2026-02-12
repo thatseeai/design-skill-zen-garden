@@ -81,12 +81,12 @@ export function StandardShowcase({ styles, pageName }: StandardShowcaseProps) {
       {/* Sidebar */}
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-50 w-64 transform transition-transform duration-200 md:relative md:translate-x-0",
+          "fixed inset-y-0 left-0 z-50 w-64 transform transition-transform duration-200 md:relative md:translate-x-0 flex flex-col overflow-hidden",
           sidebarOpen ? "translate-x-0" : "-translate-x-full",
           styles.layout.sidebar
         )}
       >
-        <div className="flex h-14 items-center justify-between px-4">
+        <div className="flex h-14 shrink-0 items-center justify-between px-4">
           <span className="text-lg font-bold">Zen Garden</span>
           <button
             className="md:hidden"
@@ -96,7 +96,7 @@ export function StandardShowcase({ styles, pageName }: StandardShowcaseProps) {
             <X className="h-5 w-5" />
           </button>
         </div>
-        <nav className="space-y-1 px-2">
+        <nav className="min-h-0 flex-1 space-y-1 overflow-y-auto px-2 pb-3">
           {pages.map((page) => (
             <NavLink
               key={page.slug}
