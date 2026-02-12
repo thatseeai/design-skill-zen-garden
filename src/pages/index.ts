@@ -71,6 +71,11 @@ export const pages: PageMeta[] = [
     description: "김춘수 「꽃」의 호명과 관계의 정서를 담은 서정적 에디토리얼 스타일",
   },
   {
+    slug: "style-n",
+    name: "Style N: Luxury Editorial",
+    description: "절제된 블랙·아이보리·브론즈 팔레트와 강한 타이포 계층의 럭셔리 에디토리얼 스타일",
+  },
+  {
     slug: "style-o",
     name: "Style O: Futuristic Brutalism",
     description: "네온 대비와 매트 다크 베이스, 비대칭 블록 레이아웃의 미래형 브루탈리즘 스타일",
