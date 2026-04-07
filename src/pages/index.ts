@@ -95,4 +95,9 @@ export const pages: PageMeta[] = [
     name: "Style R: Organic Wellness",
     description: "흙·식물·크림 톤과 유기적 곡선, 섬유 질감 배경의 오가닉 웰니스 스타일",
   },
+  {
+    slug: "style-s",
+    name: "Style S: Korean Seollal",
+    description: "한지 질감과 단홍·남청·금박의 전통색으로 설날의 정갈한 격식을 담은 스타일",
+  },
 ]

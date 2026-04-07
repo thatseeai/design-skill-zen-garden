@@ -1,23 +1,39 @@
-import { createBrowserRouter, Navigate } from "react-router-dom"
+import type { ComponentType } from "react"
+import { createBrowserRouter, Navigate, type RouteObject } from "react-router-dom"
+import { pages } from "@/pages"
 
-import StyleAPage from "@/pages/style-a/page"
-import StyleBPage from "@/pages/style-b/page"
-import StyleCPage from "@/pages/style-c/page"
-import StyleDPage from "@/pages/style-d/page"
-import StyleEPage from "@/pages/style-e/page"
-import StyleFPage from "@/pages/style-f/page"
-import StyleGPage from "@/pages/style-g/page"
-import StyleHPage from "@/pages/style-h/page"
-import StyleIPage from "@/pages/style-i/page"
-import StyleJPage from "@/pages/style-j/page"
-import StyleKPage from "@/pages/style-k/page"
-import StyleLPage from "@/pages/style-l/page"
-import StyleMPage from "@/pages/style-m/page"
-import StyleNPage from "@/pages/style-n/page"
-import StyleOPage from "@/pages/style-o/page"
-import StylePPage from "@/pages/style-p/page"
-import StyleQPage from "@/pages/style-q/page"
-import StyleRPage from "@/pages/style-r/page"
+type StyleSlug = (typeof pages)[number]["slug"]
+type StylePageModule = { default: ComponentType }
+
+const stylePageLoaders: Record<StyleSlug, () => Promise<StylePageModule>> = {
+  "style-a": () => import("@/pages/style-a/page"),
+  "style-b": () => import("@/pages/style-b/page"),
+  "style-c": () => import("@/pages/style-c/page"),
+  "style-d": () => import("@/pages/style-d/page"),
+  "style-e": () => import("@/pages/style-e/page"),
+  "style-f": () => import("@/pages/style-f/page"),
+  "style-g": () => import("@/pages/style-g/page"),
+  "style-h": () => import("@/pages/style-h/page"),
+  "style-i": () => import("@/pages/style-i/page"),
+  "style-j": () => import("@/pages/style-j/page"),
+  "style-k": () => import("@/pages/style-k/page"),
+  "style-l": () => import("@/pages/style-l/page"),
+  "style-m": () => import("@/pages/style-m/page"),
+  "style-n": () => import("@/pages/style-n/page"),
+  "style-o": () => import("@/pages/style-o/page"),
+  "style-p": () => import("@/pages/style-p/page"),
+  "style-q": () => import("@/pages/style-q/page"),
+  "style-r": () => import("@/pages/style-r/page"),
+  "style-s": () => import("@/pages/style-s/page"),
+}
+
+const styleRoutes: RouteObject[] = pages.map(({ slug }) => ({
+  path: `/${slug}`,
+  lazy: async () => {
+    const module = await stylePageLoaders[slug]()
+    return { Component: module.default }
+  },
+}))
 
 export const router = createBrowserRouter(
   [
@@ -25,78 +41,7 @@ export const router = createBrowserRouter(
       path: "/",
       element: <Navigate to="/style-a" replace />,
     },
-    {
-      path: "/style-a",
-      element: <StyleAPage />,
-    },
-    {
-      path: "/style-b",
-      element: <StyleBPage />,
-    },
-    {
-      path: "/style-c",
-      element: <StyleCPage />,
-    },
-    {
-      path: "/style-d",
-      element: <StyleDPage />,
-    },
-    {
-      path: "/style-e",
-      element: <StyleEPage />,
-    },
-    {
-      path: "/style-f",
-      element: <StyleFPage />,
-    },
-    {
-      path: "/style-g",
-      element: <StyleGPage />,
-    },
-    {
-      path: "/style-h",
-      element: <StyleHPage />,
-    },
-    {
-      path: "/style-i",
-      element: <StyleIPage />,
-    },
-    {
-      path: "/style-j",
-      element: <StyleJPage />,
-    },
-    {
-      path: "/style-k",
-      element: <StyleKPage />,
-    },
-    {
-      path: "/style-l",
-      element: <StyleLPage />,
-    },
-    {
-      path: "/style-m",
-      element: <StyleMPage />,
-    },
-    {
-      path: "/style-n",
-      element: <StyleNPage />,
-    },
-    {
-      path: "/style-o",
-      element: <StyleOPage />,
-    },
-    {
-      path: "/style-p",
-      element: <StylePPage />,
-    },
-    {
-      path: "/style-q",
-      element: <StyleQPage />,
-    },
-    {
-      path: "/style-r",
-      element: <StyleRPage />,
-    },
+    ...styleRoutes,
   ],
   {
     basename: import.meta.env.BASE_URL,
