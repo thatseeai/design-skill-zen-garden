@@ -25,6 +25,7 @@ const stylePageLoaders: Record<StyleSlug, () => Promise<StylePageModule>> = {
   "style-q": () => import("@/pages/style-q/page"),
   "style-r": () => import("@/pages/style-r/page"),
   "style-s": () => import("@/pages/style-s/page"),
+  "style-t": () => import("@/pages/style-t/page"),
 }
 
 const styleRoutes: RouteObject[] = pages.map(({ slug }) => ({

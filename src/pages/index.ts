@@ -100,4 +100,9 @@ export const pages: PageMeta[] = [
     name: "Style S: Korean Seollal",
     description: "한지 질감과 단홍·남청·금박의 전통색으로 설날의 정갈한 격식을 담은 스타일",
   },
+  {
+    slug: "style-t",
+    name: "Style T: Binance Exchange",
+    description: "니어블랙 캔버스에 바이낸스 옐로 단일 강조색, 플랫 색면과 트레이딩 그린·레드의 금융 거래소 스타일",
+  },
 ]
